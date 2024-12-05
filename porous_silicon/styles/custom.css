@@ -1,23 +1,80 @@
+*{
+  box-sizing: border-box;
+}
+.sourcesans3{
+  font-family: 'SourceSans3';
+}
+p{
+  font-size: .7em;
+  /* font-family: 'SourceSans3'; */
+  font-family: 'Proxima-Nova-Extra-Condensed';
+  font-weight: 400;
+}
+strong{
+  color: rgba(48, 48, 48, .78)!important;
+}
+.emphasize{
+  color: rgba(48, 48, 48, .78)!important;
+  font-family: 'Proxima-Nova-Extra-Condensed'!important;
+}
+.heading{
+  font-size: .9em!important;
+}
+table{
+  /* margin: 5vw!important; */
+}
+.custom-slide-content .reveal pre {
+  margin: 0!important;
+  width: 80%!important;
+}
+.custom-slide-content .reveal pre code{
+  overflow-x: hidden!important;
+}
+.custom-table th{
+  color: rgba(48, 48, 48, .78)!important;
+}
+.custom-table th, .custom-table td{
+  /* font-size: 2.5vw; */
+  font-family: 'Proxima-Nova-Extra-Condensed';
+  /* font-family: 'SourceSans3'; */
+  font-size: .65em;
+  font-weight: 400;
+}
 .hide{
   display: none;
 }
+.custom-slide-content{
+  width: 100vw;
+  height: 100vh;
+  text-align: left;
+  /* background: lightgreen; */
+
+  display:table-cell;
+  vertical-align:middle;
+  padding: 75px;
+}
+.toc-overview .custom-slide-content{
+  padding-left: 7.5em;
+  padding-right: 10px;
+}
 .toc{
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  transform: translateY(-50%);
   width: 7em;
-  padding: .3em .3em .3em .3em;
+  padding: .3em .5em .3em .1em;
   text-align: left;
-  /* border-bottom-right-radius: 1em; */
-  /* border-top-right-radius: 1em; */
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
 
 }
 .toc li{
   color: #777;
   font-size: .6em!important;
-  font-family: 'Roboto-Light'!important;
-  font-weight: normal!important;
+  font-family: 'Roboto'!important;
+  font-weight: 300!important;
   padding: .1em 0em!important;
 }
 .color-red{
@@ -33,8 +90,8 @@
 }
 .reveal .footer p{
   color: #777 !important;
-  font-family: 'Roboto-Thin'!important;
-  /* font-weight: thin!important; */
+  font-family: 'Roboto'!important;
+  font-weight: 200;
   font-size: .45em;
 }
 .reveal .footer .logo img{
@@ -104,7 +161,9 @@
 }
 .reveal .header{
   color: #fff !important;
-  font-family: 'Roboto-Medium'!important;
-  font-weight: normal;
+  /* font-family: 'Roboto-Medium'!important; */
+  /* font-family: 'Proxima-Nova-Extra-Condensed'!important; */
+  font-family: 'Roboto'!important;
+  font-weight: bold;
   font-size: .7em;
 }

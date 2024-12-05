@@ -20,20 +20,21 @@
   transform: translateY(-50%);
   font-size: 1em;
 }
-.cover-page-content h2{
-  font-family: 'Source Sans Pro';
+.cover-page-content .the-title{
+  font-family: 'Roboto';
+  font-size: 1.1em;
+  color: rgba(48, 48, 48, .78)!important;
   /* color: #656565; */
 }
 .cover-page-content h3{
   /* font-family: 'Roboto-Regular'; */
-  font-family: 'Source Sans Pro';
+  font-family: 'SourceSans3';
   color: #656565;
 }
-.cover-page-content p{
+/* .cover-page-content p{
   font-size: .7em;
-  /* font-family: 'Roboto-Light'; */
-  font-family: 'Source Sans Pro';
-}
+  font-family: 'SourceSans3';
+} */
 #tocCoverpageWrapper{
   width: 10em;
   padding: .3em .3em .3em .3em;
@@ -45,5 +46,5 @@
 .cover-page-content li{
   font-size: .6em;
   /* font-family: 'Roboto-Light'; */
-  font-family: 'Source Sans Pro';
+  font-family: 'SourceSans3';
 }
