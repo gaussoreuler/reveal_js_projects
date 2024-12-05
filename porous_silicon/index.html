@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="/dist/reset.css">
+		<link rel="stylesheet" href="/dist/reveal.css">
+		<link rel="stylesheet" href="/dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<!-- <link rel="stylesheet" href="/plugin/highlight/zenburn.css"> -->
+		<link rel="stylesheet" href="/plugin/highlight/stackoverflow-light.css">
+
+		<!-- Custom styles-->
+		<link rel="stylesheet" href="styles/fonts.css">
+		<link rel="stylesheet" href="styles/custom.css">
+		<link rel="stylesheet" href="styles/cover_page.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- coverpage -->
+        <section>
+					<div class="banner">
+					    <svg viewBox="0 0 600 200" preserveAspectRatio="none" height="100%" width="100%" style="filter: drop-shadow(0px 0px 10px rgb(70 70 70 / 0.9));" >
+								<defs>
+									<linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+						      <stop offset="0%" stop-color="#4169e1" />
+						      <stop offset="100%" stop-color="#f5f5f5" />
+						    	</linearGradient>
+
+									<clipPath id="svgPath" >
+									<path d="M0,0 L350,0  C 500,35 500,165 350,200 H0 Z" style="stroke: none; fill:#fff;"/>
+									<path d="M550,0 C 700,35 700,165 550,200 H700 V0 Z" style="stroke: none; fill:#fff;"/>
+									<!-- <path d="M0,199 L 0,201 H600 V199 Z" style="stroke: none; fill:#fff;"/> -->
+								  </clipPath>
+								</defs>
+
+								<rect width="600" height="200" fill="rgba(255,255,255,1)" clip-path="url(#svgPath)" />
+								<path d="M360,0  C 510,35 510,165 360,200 H340 C 490,165 490,35 340,0 Z" style="stroke: none; fill:orange; opacity: .5;);"/>
+								<path d="M530,0  C 680,35 680,165 530,200 H680 C 700,165 700,35 680,0 Z" style="stroke: none; fill:url(#grad3); opacity:0.5;"/>
+								<path d="M550,0   C 700,35 700,165 550,200 H700 V0 Z" style="stroke: none; fill:url(#grad3);"/>
+					    </svg>
+
+							<div class="cover-page-content">
+								<h2 class="">This is the title</h2>
+								<p>Der Inhalt dieser Projektarbeit befasst sich mit der reaktionskinetischen Simulation.</p>
+
+								<div id="tocCoverpageWrapper" class="white-smoke">
+									<strong>INHALT</strong>
+									<ol id="tocCoverpage"></ol>
+								</div>
+
+							</div>
+
+					</div>
+
+				</section>
+				<!-- coverpage -->
+
+				<section class="main-section" data-section-name="Wellenoptik: Auflösungsvermögen">
+
+						<section class="toc-overview" data-section-name="Wellenoptik: Auflösungsvermögen">
+							<p>hello</p>
+
+							<p>hello</p>
+
+							<p>hello</p>
+						</section>
+						<section data-section-name="Wellenoptik: Auflösungsvermögen">
+							bye
+						</section>
+						<section data-section-name="Wellenoptik: Auflösungsvermögen">
+							bye third
+						</section>
+
+				</section>
+
+				<section class="main-section" data-section-name="Das: Auflösungsvermögen">
+					<section class="toc-overview" data-section-name="Das: Auflösungsvermögen">
+						hello
+					</section>
+					<section data-section-name="Das: Auflösungsvermögen">
+						bye
+        	</section>
+				</section>
+
+				<section class="main-section" data-section-name="Anders: Auflösungsvermögen">
+					<section class="toc-overview" data-section-name="Anders: Auflösungsvermögen">
+						bye
+        	</section>
+
+        </section>
+
+				<section class="main-section" data-section-name="Letztes Thema">
+					<section class="toc-overview" data-section-name="Letztes Thema">
+						bye
+        	</section>
+					<section class="toc-overview" data-section-name="Letztes Thema">
+						hallo das hier ist ein test.
+						<h2>The Lorenz Equations</h2>
+						<p style="font-weight: thin;">
+							\[\begin{aligned}
+						  \dot{x} &amp; = \sigma(y-x) \\
+						  \dot{y} &amp; = \rho x - y - xz \\
+						  \dot{z} &amp; = -\beta z + xy
+							\mathsf{F_1}
+						  \end{aligned} \]
+
+						</p>
+						<p >
+							hello $ 2(\theta_0,\theta_1) = \sum_{i=0} 33 $ this is
+						</p>
+
+
+        	</section>
+					<section data-section-name="Letztes Thema" data-auto-animate>
+						<h2 data-id="code-title">With Animations</h2>
+						<pre data-id="code-animation"><code class="hljs python" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+							# Define a model
+							def infection(Y, t, b, k): y1 = Y[0]
+							y2 = Y[1]
+							dy1_dt = b*y1*y2-k*y1 dy2_dt = -b*y1*y2 return [dy1_dt, dy2_dt]
+
+							# select a time range
+							import numpy as np
+							time = np.linspace(0,365,365) # parameter
+							b = 1/5
+							k = 1/15
+							# initial conditions initialyinfected = 16 population = 82.79e6 frachospital = 0.05
+							fracdeath = 0.025
+							# i=y(1)= infizierter Anteil
+							# s=y(2)= suszeptibler Anteil i0 = initialyinfected/population s0 = 1-i0
+							Y0 = [i0, s0]
+
+							# pass model, initial conditions and time to odeint
+							from scipy.integrate import odeint
+							Y = odeint(infection, Y0, time, args=(b, k))
+
+							import matplotlib.pyplot as plt
+							plt.plot(time, population*Y[:, 0], label='infected')
+							plt.plot(time, population*Y[:, 1], label='suszeptible') plt.plot(time, frachospital*population*Y[:, 0], label='hospitalized') plt.plot(time, fracdeath*population*Y[:, 0], label='died') plt.yscale('log')
+							plt.legend(loc='best')
+							plt.xlabel('t')
+							plt.grid(True,which="both", linestyle='--')
+							plt.show()
+
+						</script></code></pre>
+					</section>
+
+        </section>
+			</div>
+
+			<div id="footer" class="footer stripe-wrapper stripe-bottom-left">
+				<div class="stripe stripe-short white-smoke flex-box">
+					<img src="logos/hm_logo_2024.png" alt="">
+					<p class="footer-text">Spektrale Eigenschaften, Alexander Edelmann &#169;</p>
+					<img src="logos/micronano_logo_2024.png" alt="">
+					<p class="footer-text">Mikro-und Nanotechnik</p>
+				</div>
+				<div class="stripe-end stripe-short white-smoke-svg"><svg viewBox="0 0 5 10" height="100%" xmlns="http://www.w3.org/2000/svg"><path d="m 0,0 c 2.5,0 2.5,2.5 2.5,2.5 v 5 c 0,0 0,2.5 2.5,2.5 H 0 Z" style="" /></svg></div>
+			</div>
+
+		</div>
+
+		<div id="hide" style="display: none;">
+
+		</div>
+
+
+		<!-- - make section headers and toc -->
+		<script src="js/make_sections.js"></script>
+
+
+
+
+
+		<script src="/dist/reveal.js"></script>
+		<script src="/plugin/notes/notes.js"></script>
+		<script src="/plugin/markdown/markdown.js"></script>
+		<script src="/plugin/highlight/highlight.js"></script>
+		<script src="/plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+
+        width: '100%',
+        height: '100%',
+				center: true,
+
+        margin: 0.0,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 2.0
+			});
+		</script>
+		<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+		<script src="js/print_pdf.js"></script>
+	</body>
+</html>
