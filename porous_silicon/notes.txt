@@ -1,0 +1,19 @@
+The pores in porous silicon do not expand uncontrollably with each subsequent etching layer because of the **self-limiting nature of the electrochemical etching process**. Here's why:
+
+### 1. **Current Flow Concentration**:
+   - During the etching process, the applied current density controls the pore formation.
+   - Once pores are formed, the current tends to flow preferentially at the pore tips, where the electric field is strongest. This localized field ensures that etching progresses deeper into the material, rather than widening the existing pores.
+
+### 2. **Surface Passivation**:
+   - The pore walls often become passivated during etching due to the deposition of reaction byproducts, such as a thin silicon oxide layer or fluoride-based compounds. This passivation reduces further chemical activity at the walls, limiting their lateral growth.
+
+### 3. **Porosity Control Through Etching Conditions**:
+   - The etching parameters (such as HF concentration, current density, and time) are carefully adjusted for each layer. These controlled conditions ensure that only the desired new layer is etched, with minimal impact on the already-formed pore structures.
+
+### 4. **Layer-by-Layer Porosity Tuning**:
+   - When constructing a dielectric mirror, the etching process is specifically designed to create alternating layers of different porosities. The new layer grows on top of the existing layer, with the porosity and pore size controlled independently for each layer.
+
+### 5. **Structural Stability of Pores**:
+   - Once pores are created, their structure provides mechanical stability, further resisting unwanted widening during subsequent etching.
+
+By combining precise control of electrochemical etching parameters and the self-limiting behavior of the process, each layer of the porous silicon dielectric mirror is formed independently, maintaining the integrity and design of the underlying pores.
