@@ -1,0 +1,26 @@
+.hello{
+  width: 30%;
+}
+.center-fig{
+  margin: auto;
+}
+.sub-figs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+figcaption{
+  font-family: 'SourceSans3';
+  font-weight: 400;
+  font-size: .4em;
+  flex-basis: 100%;
+  gap: 200px;
+}
+figure .acid-warning{
+  display: inline-block;
+  width: 45%;
+}
+figure .dielectric{
+  display: inline-block;
+  width: 100%;
+}

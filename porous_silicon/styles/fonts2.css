@@ -27,7 +27,13 @@
 }
 @font-face {
   font-family: 'Proxima-Nova-Extra-Condensed';
-  src: url(../fonts/ProximaNova/Proxima\ Nova\ Extra\ Condensed\ Semibold.otf) format('opentype');
+  src: url(../fonts/ProximaNova/Proxima\ Nova\ Condensed\ Light\ Italic.otf) format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Proxima-Nova-Extra-Condensed';
+  src: url(../fonts/ProximaNova/Proxima\ Nova\ Condensed\ Semibold.otf) format('opentype');
   font-weight: 700;
 }
 /* SourceSans3 */
