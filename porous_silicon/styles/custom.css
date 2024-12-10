@@ -21,7 +21,10 @@ i{
 strong{
   color: rgba(48, 48, 48, .78)!important;
 }
-.katex { font-size: 1em !important; } 
+.katex {
+  font-size: 1em !important;
+  color: rgba(48, 48, 48, .78)!important;
+}
 .emphasize{
   color: rgba(48, 48, 48, .78)!important;
   font-family: 'Proxima-Nova-Extra-Condensed'!important;
@@ -158,6 +161,9 @@ table{
 }
 .white-smoke{
   background: #f5f5f5;
+}
+.light-accent{
+  background: #fffaf0;
 }
 .white-smoke-svg svg{
   fill: #f5f5f5;

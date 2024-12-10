@@ -1,6 +1,9 @@
 .hello{
   width: 30%;
 }
+.wide-fig{
+  width: 100%;
+}
 .center-fig{
   margin: auto;
 }
@@ -10,7 +13,8 @@
   flex-wrap: wrap
 }
 figcaption{
-  font-family: 'SourceSans3';
+  /* font-family: 'SourceSans3'; */
+  font-family: 'Proxima-Nova-Extra-Condensed';
   font-weight: 400;
   font-size: .4em;
   flex-basis: 100%;

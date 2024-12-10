@@ -91,7 +91,17 @@
   src: url(../fonts/Roboto/Roboto-Medium.ttf) format('truetype');
   font-weight: 700;
 }
-
+/* math test */
+@font-face {
+  font-family: 'STIX-Math';
+  src: url(../fonts/Math/STIXTwoMath-Regular.ttf) format('truetype');
+  font-weight: 700;
+}
+/* ----KaTex---- */
+.katex, .mord, .mop{
+  font-size: 1.1em!important;
+  font-family: 'Roboto-Regular'!important;
+}
 
 /* font-weight: 100;
 font-weight: 200;
