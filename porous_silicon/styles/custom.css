@@ -34,8 +34,10 @@ strong{
 table{
   /* margin: 5vw!important; */
 }
+
 td, th{
   /* border: none!important; */
+  /* border-bottom: 1px solid; */
 }
 thead tr{
   /* background-color: #f5f5dc; */
