@@ -5,8 +5,11 @@
 .sourcesans3{
   font-family: 'SourceSans3';
 }
-ul. .ul-circle {
-  list-style-type: circle;
+.ul-circle{
+  list-style-type: circle!important;
+  font-size: .7em;
+  font-family: 'Proxima-Nova-Extra-Condensed';
+  font-weight: 400;
 }
 p{
   font-size: .7em;
@@ -34,6 +37,9 @@ strong{
 }
 table{
   /* margin: 5vw!important; */
+}
+tbody tr:nth-child(even) {
+  background-color: #D6EEEE;
 }
 .custom-slide-content .reveal pre {
   margin: 0!important;

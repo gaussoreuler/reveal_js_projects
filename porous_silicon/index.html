@@ -206,19 +206,17 @@
 					<section class="toc-overview" data-section-name="Ellipsometry">
 						<div class="custom-slide-content">
 							<p>
-								<strong>Experimantal:</strong>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-								 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-								  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-									 culpa qui officia deserunt mollit anim id est laborum.
-									 <span class="citation">One more test</span>
+								<strong>Single layer thickness measurement:</strong>
+								<!-- In our experiment we used an ellipsometer to determine the current daily etching rate. -->
+								A predefined current density for the two alternating layers will result in layer thickness <i>d</i> and refractive index <i>n</i>
+								that strongly depends on many factors such as HF-concentration, ambient temperature etc. <br>
+								&rArr; Ellipsometry used to fix other parameters.
 							</p>
 							<div class="center-fig wide-fig">
 								<figure class="">
-									 <img class="dielectric" src="figures/profilometer.png"></img>
-									 <figcaption><strong>Profilometer Scan.</strong> Gray area: Silicon substrate.
-										 Green area: Porous silicon. Red area: Etched porous silicon.
+									 <img class="dielectric" src="figures/ellipsometer_photo.png"></img>
+									 <figcaption><strong>Ellipsometer used in our experiment.</strong> The ellipsometer is connected to a comuter-program which
+										 fits the measured ellipsometric parameters Ψ (Psi) and Δ (Delta) and outputs possible values for <i>n</i> and <i>d</i>.
 									 </figcaption>
 								 </figure>
 							</div>
@@ -226,56 +224,283 @@
 					</section>
 					<section data-section-name="Ellipsometry">
 						<div class="custom-slide-content">
-							<p>
-								<strong>Experimantal:</strong>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-								 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-								  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-									 culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-							<p>
-								<strong>Experimantal:</strong>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-								 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-								  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-									 culpa qui officia deserunt mollit anim id est laborum.
-							</p>
+							<h2 class="emphasize heading">Important facts</h2>
+							<ul class="ul-circle">
+								<li>Reflection angle: 70˚</li>
+								<li>Compensate for the misalignment of the reflection plane using the two thumb screws until the intensity at the detector has reached a maximum<br>
+									&rArr; Autocollimator projects two crosshairs onto the sample<br>
+									&rArr; These must be inline
+								 </li>
+								<li>The laser is focused on the surface by adjusting the height of the sample table</li>
+								<li>Single Point Measurement</li>
+								<li>PRM-Profile scan: Record several measuring points in a line for more details</li>
+								<li>Critical consideration of the measured values: Close to a multiple of the period thickness? </li>
+							</ul>
 						</div>
 					</section>
 				</section>
 
-				<section class="main-section" data-section-name="Determining Etch-Rate">
-					<section class="toc-overview" data-section-name="Determining Etch-Rate">
+				<section class="main-section" data-section-name="Determining Etching-Rate">
+					<section class="toc-overview" data-section-name="Determining Etching-Rate">
 						<div class="custom-slide-content">
-							<p>
-								<strong>Experimantal:</strong>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-								 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-								  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-									 culpa qui officia deserunt mollit anim id est laborum.
-							</p>
+							<h2 class="emphasize heading">Procedure</h2>
+							<ul class="ul-circle">
+								<li>Parameters for the dielectric mirror: Current density, number of layers and etching time</li>
+								<li>Etching time dependent on etching rate (day-dependent)</li>
+								<li>External influences:<br>
+									&rArr; Temperature fluctuations<br>
+									&rArr; Electrolyte composition <br>
+									&rArr; Purity of the etchant
+								 </li>
+								<li>Goal: Elimination of external influences in order to achieve precise and constant layer parameters</li>
+							</ul>
 						</div>
         	</section>
 
+					<section data-section-name="Determining Etching-Rate">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Target values</h2>
+							<p>Data determined from the known reference curves.
+								These values should serve as a guideline for determining the final mirror property parameters.</p>
+							<table class="custom-table">
+								<thead>
+									<tr>
+										<th>Layer</th>
+										<th>El. current [mA]</th>
+										<th>Refractive index <i>n</i> []</th>
+										<th>Thickness <i>d</i> [nm]</th>
+										<th>Etching-rate [nm/s]</th>
+										<th>Time [s]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>high <i>n</i></td>
+										<td>50</td>
+										<td>2.2</td>
+										<td>80</td>
+										<td>8</td>
+										<td>10</td>
+									</tr>
+									<tr>
+										<td>low <i>n</i></td>
+										<td>100</td>
+										<td>2.0</td>
+										<td>90</td>
+										<td>14</td>
+										<td>6.4</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+        	</section>
+
+					<section data-section-name="Determining Etching-Rate">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>First layer:</strong>
+								Etching of the first layer (high <i>n</i>) by applying 50 mA for 10 seconds.
+							</p>
+							<div class="center-fig wide-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/ellipsometer_first_layer.png"></img>
+									 <figcaption><strong>Ellipsometer measurement of the first layer.</strong>
+										 Plotted: Thickness <i>d</i> and refractive index <i>n</i> with respect to position.
+										 Thickness is observed to be approx. 43.2 nm and <i>n</i> is approx. 2.65.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+        	</section>
+					<section data-section-name="Determining Etching-Rate">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>Second layer:</strong>
+								Etching of the second layer (low <i>n</i>) by applying 50 mA for 10 seconds.
+							</p>
+							<div class="center-fig wide-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/ellipsometer_second_layer.png"></img>
+									 <figcaption><strong>Ellipsometer measurement of the second layer.</strong>
+										 Plotted: Thickness <i>d</i> and refractive index <i>n</i> with respect to position.
+										 Thickness is observed to be approx. 82.5 nm and <i>n</i> is approx. 2.18.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+        	</section>
+					<section data-section-name="Determining Etching-Rate">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Results from ellipsometric measurements</h2>
+							<p>Comparison of target parameters and measured values.</p>
+							<table class="custom-table">
+								<thead>
+									<tr >
+								    <th style="text-align: center!important; border: none!important;" colspan="4">High <i>n</i> layer</td>
+								  </tr>
+									<tr style="border: none!important;">
+										<th>Layer</th>
+										<th>El. current [mA]</th>
+										<th>Refractive index <i>n</i> []</th>
+										<th>Thickness <i>d</i> [nm]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Target</td>
+										<td>2.2</td>
+										<td>80</td>
+										<td>8</td>
+									</tr>
+									<tr>
+										<td>Measured</td>
+										<td>2.65</td>
+										<td>40</td>
+										<td>4.3</td>
+									</tr>
+								</tbody>
+							</table>
+							<br>
+							<table class="custom-table">
+								<thead>
+									<tr >
+								    <th style="text-align: center!important; border: none!important;" colspan="4">Low <i>n</i> layer</td>
+								  </tr>
+									<tr style="border: none!important;">
+										<th>Layer</th>
+										<th>El. current [mA]</th>
+										<th>Refractive index <i>n</i> []</th>
+										<th>Thickness <i>d</i> [nm]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>target</td>
+										<td>2.0</td>
+										<td>90</td>
+										<td>14</td>
+									</tr>
+									<tr>
+										<td>measured</td>
+										<td>2.18</td>
+										<td>82.5</td>
+										<td>12.8</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+        	</section>
+
+					<section data-section-name="Determining Etching-Rate">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Defining the mirror parameters</h2>
+							<p>
+								<strong>Mirror for center wavelength at 422.2 nm:</strong>
+								Our mirror is designed to have 10 alternating layers with layer-parameters listed below.
+							</p>
+							<table class="custom-table">
+								<thead>
+									<tr>
+										<th>Layer</th>
+										<th>El. current [mA]</th>
+										<th>Refractive index <i>n</i> []</th>
+										<th>Thickness <i>d</i> [nm]</th>
+										<th>Etching-rate [nm/s]</th>
+										<th>Time [s]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>high <i>n</i></td>
+										<td>50</td>
+										<td>2.65</td>
+										<td>40</td>
+										<td>4.3</td>
+										<td>9.3</td>
+									</tr>
+									<tr>
+										<td>low <i>n</i></td>
+										<td>100</td>
+										<td>2.18</td>
+										<td>48.4</td>
+										<td>12.8</td>
+										<td>3.8</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+        	</section>
         </section>
 
-				<section class="main-section" data-section-name="Evaluation of Results">
-					<section class="toc-overview" data-section-name="Evaluation of Results">
+				<section class="main-section" data-section-name="Characterization">
+					<section class="toc-overview" data-section-name="Characterization">
 						<div class="custom-slide-content">
-							<p>
-								<strong>Experimantal:</strong>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-								 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-								  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-									 culpa qui officia deserunt mollit anim id est laborum.
+							<p class="fragment">
+								<strong>Optical response:</strong>
+								Simulation using the previously determined parameter and measurement of mirror using reflectometry.
 							</p>
+							<p class="fragment">
+ 								<strong>Mirror thickness:</strong>
+ 								Profilometer measurement of etched mirror.
+ 							</p>
 						</div>
-        	</section>
+					</section>
+					<section data-section-name="Characterization">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>Reflectivity Simulation:</strong>
+								Simulation of <i>R</i> for an alternating 10-layer stack with <i>n</i><sub>high</sub> = 2.65 and <i>n</i><sub>low</sub> = 2.18 and thickness
+								<i>d</i><sub>high</sub> = 40.0 nm and <i>d</i><sub>low</sub> = 48.4 nm shown below.
+							</p>
+							<div class="center-fig mid-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/reflectometer_simulation.png"></img>
+									 <figcaption><strong>Simulation results.</strong> Depicted are also the resuts for a different order of layers (<i>n</i><sub>low</sub> at top), by which the peak reflectivity decreases,
+										 and for a 20-layer stack, by which the peak reflectivity slightly increases.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+					</section>
+					<section data-section-name="Characterization">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>Reflectivity Measurement:</strong>
+								Measured reflectivity <i>R</i> with respect to wavelength <i>λ</i> by means of reflectometry shown below.
+							</p>
+							<div class="center-fig wide-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/reflectometer_measurement.png"></img>
+									 <figcaption><strong>Measurement result of fabricated mirror using reflectometry.</strong> The peak
+										 reflectivity is observed to be at around 862 nm.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+					</section>
+					<section data-section-name="Characterization">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>Profilometer measurement:</strong>
+								By etching part of the mirror using KOH the total thickness can be measured using a profilometer as shown below.
+							</p>
+							<div class="center-fig wide-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/profilometer_measurement.png"></img>
+									 <figcaption><strong>Profilometer measurement.</strong>
+										 The total mirror thickness <i>d</i> is observed to be approximately 1094 nm.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+					</section>
 				</section>
+
 
 				<section class="main-section" data-section-name="Discussion">
 					<section class="toc-overview" data-section-name="Discussion">
@@ -310,16 +535,26 @@
 						<div class="custom-slide-content">
 							<h2 class="emphasize heading">Oxidation of porous silicon</h2>
  							<p class="fragment">
- 								<strong>Change of refractive index over time:</strong>
- 								substrate can be oxidized to a large extent after a short exposure to air or right after preparation.
-								can even take place when the sample is still in the electrolyte
-								demonstrates that PS oxidation always decreases n. Although the pores are filled with a substance with higher refractive index nSiO2>1,
-								it occurs by sacrifice of the silicon fraction with the much higher refractive index nSi=3,86 (λ=633 nm).
-								However oxidation causes changes in its optical characteristics.
-								Moreover some porous layers are oxidized already in the course of anodic etching or when they are stored for a short time in ambient air.
+ 								<strong>Oxidation after exposure to air:</strong>
+								Given its large surface area, the porous silicon layers are highly prone to oxidation when exposed to ambient air.
+ 							</p>
+							<p class="fragment">
+ 								<strong>Oxidation during etching:</strong>
+								Localized oxidation in the course of anodic etching might occur under certain electrochemical conditions, such as insufficient HF concentration or the presence of competing reactions.
+								Under certain electrochemical conditions, such as insufficient HF concentration or the presence of competing reactions, localized oxidation might occur if there's an unintentional introduction of oxidizing conditions.
+								This might be relevant for our case as we used a very low HF-concentration.
+ 							</p>
+							<p class="fragment">
+ 								<strong>Change of refractive index:</strong>
+								Although the pores are filled with a substance with higher refractive index (n<sub>SiO2</sub>>1), oxidation of porous silicon always decreases its refractive index.
+								That is, it occurs by sacrifice of the silicon fraction with the much higher refractive index nSi=3,86 (λ=633 nm).
 								<span class="citation">V.A. Tolmachev E.V. Astrova a. “Effective refractive index and composition of oxidized porous
 								silicon films”. In: <i>Materials Science and Engineering</i> (2000).</span>
  							</p>
+						</div>
+					</section>
+					<section data-section-name="Discussion">
+						<div class="custom-slide-content">
  							<p class="fragment">
 								<strong>Volume increase caused by oxidation</strong>
 								In previous work it has been shown that oxidation does not depend on porosity.
@@ -347,6 +582,7 @@
 								<i>Possible solutions:</i><br>
 								&rArr; Choose lower current density<br>
 								&rArr; Shake etch cell (could be dangerous because of HF)<br>
+								&rArr; Ultrasonic treatment during etching<br>
 							 </p>
 							 <p class="fragment">
  								<strong>Decreasing resistance:</strong>
@@ -368,13 +604,15 @@
 								<strong>Oxidation as the driving source for discrepancies:</strong>
 								During fabrication oxidation of the porous silicon layers has not been taken into account.
 								Spectrum of the mirror resembles that of a functioning dielectric mirror to reasonable degree.
-								We conclude that all layers have been affected equally.
+								We conclude that all layers have been affected equally (to a reasonable degree).
+								Increase of coss-section of mirror not noticable, oxitation must have been an isotropic.
+								Growth of 2 time inital thickness unlikely however, Error propagation.
 								Therfore, we consider this the main source of error.<br>
 								<i>Possible solutions:</i><br>
 								&rArr; Initial thin layer is bound to oxidize fast. Determined etch-rate already wrong.<br>
 								&rArr; Determingn etch-rate: Wait until layer has reached its final refractive index value,
 								possibly heat up substrate to speed up full oxidation <br>
-								&rArr; Determingn etch-rate was not nesseccary in the first place: Relying on the values provided might have produced better results
+								<!-- &rArr; Determingn etch-rate was not nesseccary in the first place: Relying on the values provided might have produced better results -->
 							 </p>
 						</div>
 					</section>
