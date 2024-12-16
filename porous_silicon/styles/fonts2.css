@@ -99,8 +99,8 @@
 }
 /* ----KaTex---- */
 .katex, .mord, .mop{
-  font-size: 1.1em!important;
-  font-family: 'Roboto-Regular'!important;
+  font-size: 1em!important;
+  font-family: 'Proxima-Nova-Extra-Condensed'!important;
 }
 
 /* font-weight: 100;

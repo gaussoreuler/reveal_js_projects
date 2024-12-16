@@ -24,10 +24,6 @@ i{
 strong{
   color: rgba(48, 48, 48, .78)!important;
 }
-.katex {
-  font-size: 1em !important;
-  color: rgba(48, 48, 48, .78)!important;
-}
 .emphasize{
   color: rgba(48, 48, 48, .78)!important;
   font-family: 'Proxima-Nova-Extra-Condensed'!important;
@@ -125,6 +121,7 @@ tbody tr:nth-child(even) {
 .reveal .stripe-wrapper{
   display: flex;
   position: absolute;
+  z-index: 99;
 }
 .reveal .stripe-top-left{
   left: 0em!important;
