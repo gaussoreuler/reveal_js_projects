@@ -226,15 +226,15 @@
 						<div class="custom-slide-content">
 							<h2 class="emphasize heading">Important facts</h2>
 							<ul class="ul-circle">
-								<li>Reflection angle: 70˚</li>
-								<li>Compensate for the misalignment of the reflection plane using the two thumb screws until the intensity at the detector has reached a maximum<br>
+								<li class="fragment">Reflection angle: 70˚</li>
+								<li class="fragment">Compensate for the misalignment of the reflection plane using the two thumb screws until the intensity at the detector has reached a maximum<br>
 									&rArr; Autocollimator projects two crosshairs onto the sample<br>
 									&rArr; These must be inline
 								 </li>
-								<li>The laser is focused on the surface by adjusting the height of the sample table</li>
-								<li>Single Point Measurement</li>
-								<li>PRM-Profile scan: Record several measuring points in a line for more details</li>
-								<li>Critical consideration of the measured values: Close to a multiple of the period thickness? </li>
+								<li class="fragment">The laser is focused on the surface by adjusting the height of the sample table</li>
+								<li class="fragment">Single Point Measurement</li>
+								<li class="fragment">PRM-Profile scan: Record several measuring points in a line for more details</li>
+								<li class="fragment">Critical consideration of the measured values: Close to a multiple of the period thickness? </li>
 							</ul>
 						</div>
 					</section>
@@ -245,14 +245,14 @@
 						<div class="custom-slide-content">
 							<h2 class="emphasize heading">Procedure</h2>
 							<ul class="ul-circle">
-								<li>Parameters for the dielectric mirror: Current density, number of layers and etching time</li>
-								<li>Etching time dependent on etching rate (day-dependent)</li>
-								<li>External influences:<br>
+								<li class="fragment">Parameters for the dielectric mirror: Current density, number of layers and etching time</li>
+								<li class="fragment">Etching time dependent on etching rate (day-dependent)</li>
+								<li class="fragment">External influences:<br>
 									&rArr; Temperature fluctuations<br>
 									&rArr; Electrolyte composition <br>
 									&rArr; Purity of the etchant
 								 </li>
-								<li>Goal: Elimination of external influences in order to achieve precise and constant layer parameters</li>
+								<li class="fragment">Goal: Elimination of external influences in order to achieve precise and constant layer parameters</li>
 							</ul>
 						</div>
         	</section>
@@ -508,14 +508,14 @@
 							<h2 class="emphasize heading">Discrepancies and Observations</h2>
 							<p class="fragment">
 								<strong>Optical response:</strong>
-								The wavelength for which the reflectance is highest has been observed to be approx. 860 nm
-								which is far off the target wavelenght of 422 nm. This represents a shift by a factor of approx. 2.1.
+								The wavelength for which the reflectance is highest has been observed to be approx. 861 nm
+								which is far off the target wavelenght of 422.2 nm. This represents a shift by a factor of approx. 2.
 							</p>
 							<p class="fragment">
  								<strong>Mirror thickness:</strong>
- 								The thickness of the mirror was measured to be significantly thicker than planed. 12 alternating layers of thickness
-								20 nm and 30 nm respectively were indended which should result in a total thickness of 100 nm.
-								The profilometer measurement however, clearly indicates that the thickness of the mirror was approx. 1050 nm.
+ 								The thickness of the mirror was measured to be significantly thicker than expected. 10 alternating layers of thickness
+								40 nm and 48.4 nm respectively were indended which should result in a total thickness of 442 nm.
+								The profilometer measurement however, clearly indicates that the thickness of the mirror was approx. 1094 nm.
 								While we could obtain a value for the total thickness, we have no information about the individual layers.
  							</p>
   						<p class="fragment">
@@ -541,13 +541,12 @@
 							<p class="fragment">
  								<strong>Oxidation during etching:</strong>
 								Localized oxidation in the course of anodic etching might occur under certain electrochemical conditions, such as insufficient HF concentration or the presence of competing reactions.
-								Under certain electrochemical conditions, such as insufficient HF concentration or the presence of competing reactions, localized oxidation might occur if there's an unintentional introduction of oxidizing conditions.
 								This might be relevant for our case as we used a very low HF-concentration.
  							</p>
 							<p class="fragment">
  								<strong>Change of refractive index:</strong>
-								Although the pores are filled with a substance with higher refractive index (n<sub>SiO2</sub>>1), oxidation of porous silicon always decreases its refractive index.
-								That is, it occurs by sacrifice of the silicon fraction with the much higher refractive index nSi=3,86 (λ=633 nm).
+								Although the pores are filled with a substance with higher refractive index (<i>n</i><sub>SiO<sub>2</sub></sub>>1), oxidation of porous silicon always decreases its refractive index.
+								That is because it occurs by sacrifice of the silicon fraction with the much higher refractive index <i>n</i><sub>Si</sub>=3,86 (<i>λ</i>=633 nm).
 								<span class="citation">V.A. Tolmachev E.V. Astrova a. “Effective refractive index and composition of oxidized porous
 								silicon films”. In: <i>Materials Science and Engineering</i> (2000).</span>
  							</p>
@@ -556,16 +555,16 @@
 					<section data-section-name="Discussion">
 						<div class="custom-slide-content">
  							<p class="fragment">
-								<strong>Volume increase caused by oxidation</strong>
+								<strong>Volume increase caused by oxidation:</strong>
 								In previous work it has been shown that oxidation does not depend on porosity.
 								\[
-								 V(x) = V_0+V_01.27x\\
+								 V(x) = V_0+V_01.27x,\\
 								\]
-								Therfore, thickness is expected to increase by
+								where x denotes the amount of oxidation (0 ≤ <i>x</i> ≤ 1). Therfore, thickness is expected to increase by:
 								\[
 								 d/d_0=(1+1.27x)^{1/3}
 								\]
-								For 100% oxidation \((x=1)\) we expect a thickness increase by a factor of approx 1.3. However, at low temperatures, the dependence of the oxidation rate on the crystallo- graphic direction becomes noticeable.
+								For complete oxidation \((x=1)\) we expect a thickness increase by a factor of approx 1.3. However, at low temperatures, the dependence of the oxidation rate on the crystallo- graphic direction becomes noticeable.
 								<span class="citation">Sailor, M.J. (2014). Chemical Reactivity and Surface Chemistry of Porous Silicon. In: <i>Canham, L. (eds) Handbook of Porous Silicon</i>. Springer.</span>
   						</p>
 						</div>
@@ -582,14 +581,14 @@
 								<i>Possible solutions:</i><br>
 								&rArr; Choose lower current density<br>
 								&rArr; Shake etch cell (could be dangerous because of HF)<br>
-								&rArr; Ultrasonic treatment during etching<br>
+								&rArr; Ultrasonic treatment during etching (affects etch rate)<br>
 							 </p>
 							 <p class="fragment">
  								<strong>Decreasing resistance:</strong>
-								Joule Heating: As the process proceeds, Joule heating can occur due to electrical current flowing through the silicon, affecting resistance and etching rates.
-								This local heating can alter the chemical dynamics of the etching solution and potentially impact uniformity.<br>
+								As the process proceeds, Joule heating can occur due to electrical current flowing through the silicon, affecting resistance and etching rates.
+								This local heating can alter the chemical dynamics of the etching solution and potentially impact uniformity.
 								However, the spectrum of the layer stack shows clear characteristics of a dielectric mirror.
- 								Therfore, the decreasing resistance could just be a result of decreasing silicon thickness.
+ 								Therfore, the decreasing resistance could just be a result of decreasing silicon thickness:
 								\(R = ρL/A\), where R is resistance, ρ is resistivity, L is length, and A is the cross-sectional area). <br>
 								<i>Possible solutions:</i><br>
 								&rArr; plot avg resistance for each layer<br>
@@ -605,13 +604,11 @@
 								During fabrication oxidation of the porous silicon layers has not been taken into account.
 								Spectrum of the mirror resembles that of a functioning dielectric mirror to reasonable degree.
 								We conclude that all layers have been affected equally (to a reasonable degree).
-								Increase of coss-section of mirror not noticable, oxitation must have been an isotropic.
-								Growth of 2 time inital thickness unlikely however, Error propagation.
-								Therfore, we consider this the main source of error.<br>
+								Moreover, an increase of coss-section of the mirror was not observed, hence oxidation must have been an isotropic.
+								Growth of 2 times the inital thickness is unlikely, however error propagation is must have occured.<br>
 								<i>Possible solutions:</i><br>
-								&rArr; Initial thin layer is bound to oxidize fast. Determined etch-rate already wrong.<br>
-								&rArr; Determingn etch-rate: Wait until layer has reached its final refractive index value,
-								possibly heat up substrate to speed up full oxidation <br>
+								&rArr; Initial thin layer is bound to oxidize fast. Determined etching-rate was wrong.<br>
+								&rArr; Invesigate oxidation kinetics and adjust etching-rate accordingly<br>
 								<!-- &rArr; Determingn etch-rate was not nesseccary in the first place: Relying on the values provided might have produced better results -->
 							 </p>
 						</div>
