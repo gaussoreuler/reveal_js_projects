@@ -363,9 +363,9 @@
 								  </tr>
 									<tr style="border: none!important;">
 										<th>Layer</th>
-										<th>El. current [mA]</th>
 										<th>Refractive index <i>n</i> []</th>
 										<th>Thickness <i>d</i> [nm]</th>
+										<th>Etching-Rate [nm/s]</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -378,7 +378,7 @@
 									<tr>
 										<td>Measured</td>
 										<td>2.65</td>
-										<td>40</td>
+										<td>43.2</td>
 										<td>4.3</td>
 									</tr>
 								</tbody>
@@ -391,9 +391,9 @@
 								  </tr>
 									<tr style="border: none!important;">
 										<th>Layer</th>
-										<th>El. current [mA]</th>
 										<th>Refractive index <i>n</i> []</th>
 										<th>Thickness <i>d</i> [nm]</th>
+										<th>Etching-Rate [nm/s]</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -478,9 +478,8 @@
 							</p>
 							<div class="center-fig mid-fig">
 								<figure class="">
-									 <img class="dielectric" src="figures/reflectometer_simulation.png"></img>
-									 <figcaption><strong>Simulation results.</strong> Depicted are also the resuts for a different order of layers (<i>n</i><sub>low</sub> at top), by which the peak reflectivity decreases,
-										 and for a 20-layer stack, by which the peak reflectivity slightly increases.
+									 <img class="dielectric" src="figures/reflectometer_sim.png"></img>
+									 <figcaption><strong>Simulation results.</strong> Depicted are the simulation results for number of layers 10, 8, and 6. Decreasing the layer thickness will decrease the peak reflectivity.
 									 </figcaption>
 								 </figure>
 							</div>
@@ -497,7 +496,7 @@
 								<figure class="">
 									 <img class="dielectric" src="figures/reflectometer_measurement.png"></img>
 									 <figcaption><strong>Measurement result of fabricated mirror using reflectometry.</strong> The peak
-										 reflectivity is observed to be at around 862 nm.
+										 reflectivity is observed to be at around 861 nm.
 									 </figcaption>
 								 </figure>
 							</div>
@@ -526,7 +525,7 @@
 				<section class="main-section" data-section-name="Discussion">
 					<section class="toc-overview" data-section-name="Discussion">
 						<div class="custom-slide-content">
-							<h2 class="emphasize heading">Discrepancies and Observations</h2>
+							<h2 class="emphasize heading">Discrepancies</h2>
 							<p class="fragment">
 								<strong>Optical response:</strong>
 								The wavelength for which the reflectance is highest has been observed to be approx. 861 nm
@@ -539,6 +538,22 @@
 								The profilometer measurement however, clearly indicates that the thickness of the mirror was approx. 1094 nm.
 								While we could obtain a value for the total thickness, we have no information about the individual layers.
  							</p>
+  						<!-- <p class="fragment">
+  								<strong>Hydrogen bubbles inside etch cell:</strong>
+  								During etching of the mirror the formation of hydrogen bubbles was observed.
+									The generation of hydrogen bubbles is a byproduct of the dissolution reaction.
+  						</p>
+  						<p class="fragment">
+ 								<strong>Decreasing resistance</strong>
+ 								During etching we observed a steady decrease in electrical resistance of the silicon waver.
+								Does this mean all the layers have different properties?
+   						</p> -->
+						</div>
+
+        	</section>
+					<section data-section-name="Discussion">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Observations</h2>
   						<p class="fragment">
   								<strong>Hydrogen bubbles inside etch cell:</strong>
   								During etching of the mirror the formation of hydrogen bubbles was observed.
@@ -604,6 +619,21 @@
 								&rArr; Shake etch cell (could be dangerous because of HF)<br>
 								&rArr; Ultrasonic treatment during etching (affects etch rate)<br>
 							 </p>
+							 <!-- <p class="fragment">
+ 								<strong>Decreasing resistance:</strong>
+								As the process proceeds, Joule heating can occur due to electrical current flowing through the silicon, affecting resistance and etching rates.
+								This local heating can alter the chemical dynamics of the etching solution and potentially impact uniformity.
+								However, the spectrum of the layer stack shows clear characteristics of a dielectric mirror.
+ 								Therfore, the decreasing resistance could just be a result of decreasing silicon thickness:
+								\(R = ρL/A\), where R is resistance, ρ is resistivity, L is length, and A is the cross-sectional area). <br>
+								<i>Possible solutions:</i><br>
+								&rArr; plot avg resistance for each layer<br>
+								&rArr; measure temperature
+ 							 </p> -->
+						</div>
+					</section>
+					<section data-section-name="Discussion">
+						<div class="custom-slide-content">
 							 <p class="fragment">
  								<strong>Decreasing resistance:</strong>
 								As the process proceeds, Joule heating can occur due to electrical current flowing through the silicon, affecting resistance and etching rates.
@@ -626,7 +656,7 @@
 								Spectrum of the mirror resembles that of a functioning dielectric mirror to reasonable degree.
 								We conclude that all layers have been affected equally (to a reasonable degree).
 								Moreover, an increase of coss-section of the mirror was not observed, hence oxidation must have been an isotropic.
-								Growth of 2 times the inital thickness is unlikely, however error propagation is must have occured.<br>
+								Growth of 2 times the inital thickness is unlikely, however we assume that error propagation must have occured.<br>
 								<i>Possible solutions:</i><br>
 								&rArr; Initial thin layer is bound to oxidize fast. Determined etching-rate was wrong.<br>
 								&rArr; Invesigate oxidation kinetics and adjust etching-rate accordingly<br>
