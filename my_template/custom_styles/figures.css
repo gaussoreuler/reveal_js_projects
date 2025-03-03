@@ -1,0 +1,24 @@
+figure img{
+  display: block;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0;
+  background: transparent;
+}
+.center-fig{
+  margin: auto;
+}
+.sub-figs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+figcaption{
+  /* font-family: 'SourceSans3'; */
+  font-family: 'Proxima-Nova-Extra-Condensed';
+  font-weight: 400;
+  font-size: .8em;
+  flex-basis: 100%;
+  /* gap: 200px; */
+  text-align: left;
+}

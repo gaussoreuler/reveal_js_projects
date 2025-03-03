@@ -1,0 +1,13 @@
+h1,h2,h3{
+  font-family: 'Proxima-Nova-Extra-Condensed'!important;
+  color: rgba(48, 48, 48, .78)!important;
+}
+strong{
+  color: rgba(48, 48, 48, .78)!important;
+}
+ul{
+  list-style-type: circle!important;
+}
+li{
+  margin-bottom: 10px;
+}

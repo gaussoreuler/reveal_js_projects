@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<!-- <link rel="stylesheet" href="/plugin/highlight/zenburn.css"> -->
+		<link rel="stylesheet" href="highlight/stackoverflow-light.css">
+
+		<!-- Custom styles-->
+		<!-- <link rel="stylesheet" href="styles/fonts.css"> -->
+		<link rel="stylesheet" href="styles/fonts2.css">
+		<link rel="stylesheet" href="styles/custom.css">
+		<link rel="stylesheet" href="styles/cover_page.css">
+		<link rel="stylesheet" href="styles/references.css">
+		<link rel="stylesheet" href="styles/figures.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- coverpage -->
+        <section>
+					<div class="banner">
+					    <svg viewBox="0 0 600 200" preserveAspectRatio="none" height="100%" width="100%" style="filter: drop-shadow(0px 0px 10px rgb(70 70 70 / 0.9));" >
+								<defs>
+									<linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+						      <stop offset="0%" stop-color="#4169e1" />
+						      <stop offset="100%" stop-color="#f5f5f5" />
+						    	</linearGradient>
+
+									<clipPath id="svgPath" >
+									<path d="M0,0 L350,0  C 500,35 500,165 350,200 H0 Z" style="stroke: none; fill:#fff;"/>
+									<path d="M550,0 C 700,35 700,165 550,200 H700 V0 Z" style="stroke: none; fill:#fff;"/>
+									<!-- <path d="M0,199 L 0,201 H600 V199 Z" style="stroke: none; fill:#fff;"/> -->
+								  </clipPath>
+								</defs>
+
+								<rect width="600" height="200" fill="rgba(255,255,255,1)" clip-path="url(#svgPath)" />
+								<path d="M360,0  C 510,35 510,165 360,200 H340 C 490,165 490,35 340,0 Z" style="stroke: none; fill:orange; opacity: .5;);"/>
+								<path d="M530,0  C 680,35 680,165 530,200 H680 C 700,165 700,35 680,0 Z" style="stroke: none; fill:url(#grad3); opacity:0.5;"/>
+								<path d="M550,0   C 700,35 700,165 550,200 H700 V0 Z" style="stroke: none; fill:url(#grad3);"/>
+					    </svg>
+
+							<div class="cover-page-content">
+								<h2 class="the-title">Lab Class: Porous Silicon</h2>
+								<p>A. Edelmann, A. Mahmoudi, N. Käfer, J. Herderich, N. Péré</p>
+
+								<div id="tocCoverpageWrapper" class="light-accent">
+									<h2 class="emphasize heading">Contents</h2>
+									<ol id="tocCoverpage"></ol>
+								</div>
+
+							</div>
+
+					</div>
+
+				</section>
+				<!-- coverpage -->
+
+				<section class="main-section" data-section-name="Introduction">
+
+						<section class="toc-overview" data-section-name="Introduction">
+
+							<div class="custom-slide-content">
+								<h2 class="emphasize heading">Goals of this Labclass</h2>
+								<p class="fragment">
+									<strong>Education in safe handling of Hydrofluoric (HF) Acid :</strong>
+									HF is an extremely corrosive inorganic acid that demands the utmost care during handling.
+									It can easily penetrate the skin, decalcify bones, and cause tissue necrosis, potentially leading to amputation or even death.
+									 <!-- <span class="citation">hello this is a test</span> -->
+								 </p>
+								 <div class="center-fig hello fragment">
+									 <figure class="sub-figs">
+  									  <object class="acid-warning" data="figures/GHS-pictogram-acid.svg" type="image/svg+xml"></object>
+  										<object class="acid-warning" data="figures/GHS-pictogram-skull.svg" type="image/svg+xml"></object>
+  									  <figcaption>GHS hazard pictograms for HF</figcaption>
+  									</figure>
+								 </div>
+
+
+								<p class="fragment">
+									<strong>Fabrication of a dielectric mirror:</strong>
+									Dielectric mirrors are typically fabricated using traditional deposition methods such as evaporation and sputtering using a combination of materials such as SiO<sub>2</sub> and TiO<sub>2</sub>.
+									However, the refractive index of silicon can be controlled by varying its porosity, making it possible to create a multilayer stack of porous silicon.
+									This stack, with alternating layers of different porosities, can function as an effective dielectric mirror by exploiting constructive interference of light.
+									 <!-- <span class="citation">hello this is another test</span> -->
+								 </p>
+								 <!-- <div class="center-fig hello">
+									 <figure class="">
+  									  <img class="dielectric" src="figures/dielectric.webp"></img>
+  									  <figcaption>GHS hazard pictograms for HF</figcaption>
+  									</figure>
+								 </div> -->
+
+							</div>
+
+						</section>
+
+						<section data-section-name="Introduction">
+							<div class="custom-slide-content">
+								<h2 class="emphasize heading">Structure of the Lab class</h2>
+								<p>
+									<strong>Preparation:</strong>
+									An introduction to the instruments/devices used for the main experiment.
+								</p>
+								<table class="custom-table">
+									<thead>
+										<tr>
+									    <th>Experiment</th>
+									    <th>Short Description</th>
+									  </tr>
+									</thead>
+									<tbody>
+										<tr class="fragment">
+									    <td>Safety briefing on working with HF acid</td>
+									    <td>
+												HF acid is fundamental for the production of porous silicon, but also poses a great potential hazard for the laboratory staff involved.
+												Safety protocols and cautious handling are therefore cruicial.
+											</td>
+										</tr>
+										<tr class="fragment">
+									    <td>Anodic oxidation of silicon</td>
+									    <td>This experiment servers as a rehersal exercise to get used to the handling the etching equipment.
+											</td>
+										</tr>
+										<tr class="fragment">
+									    <td>Ellipsometric measurement of oxide layer</td>
+									    <td>Using ellipsometry to invesitigate layers can produce misleading results.
+												We used this opportuinity to learn how to interpret the output results.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+						<section data-section-name="Introduction">
+							<div class="custom-slide-content">
+								<!-- <h2 class="emphasize heading">Fabrication of Dielectric Mirror:</h2> -->
+								<p>
+									<strong>Fabrication of a dielectric mirror:</strong>
+									Controlling porousity through applied current an alternating layer stack is fabricated that should act as a dielectric mirror.
+								</p>
+								<table class="custom-table">
+									<thead>
+										<tr>
+									    <th>Experiment</th>
+									    <th>Short Description</th>
+									  </tr>
+									</thead>
+									<tbody>
+										<tr class="fragment">
+									    <td>Setting up mirror specifications</td>
+									    <td>Target values for mirror layer parameters were chosen (eg. el. current, and etching-duration).
+												HF concentration was prededermined.
+											</td>
+										</tr>
+										<tr class="fragment">
+									    <td>Etching of <i>n</i><sub>high</sub>-layer</td>
+									    <td>Etching porous layer on substrate using a specific el. current value</td>
+										</tr>
+										<tr class="fragment">
+									    <td>Determining etching-rate of <i>n</i><sub>high</sub>-layer</td>
+									    <td>Ellipsometric measurement to determine thickness and refractive index.
+												Results used to calculate etching-rate for this el. current value.
+											</td>
+										</tr>
+										<tr class="fragment">
+									    <td>Repeating both steps for <i>n</i><sub>low</sub>-layer</td>
+									    <td>Etching-rate for el. current used for this layer was determined in the same way.</td>
+										</tr>
+										<tr class="fragment">
+									    <td>Actual etching of mirror</td>
+									    <td>Using the results from the previous steps we set up design parameters for a dielectric mirrors
+												which is supposed to work for a predefined wavelength.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+						<section data-section-name="Introduction">
+							<div class="custom-slide-content">
+								<!-- <h2 class="emphasize heading">Characterization of Dielectric Mirror</h2> -->
+								<p>
+									<strong>Characterization of dielectric mirror:</strong>
+									We investigate if our mirror is working as expected.
+								</p>
+								<table class="custom-table">
+									<thead>
+										<tr>
+									    <th>Experiment</th>
+									    <th>Short Description</th>
+									  </tr>
+									</thead>
+									<tbody>
+										<tr class="fragment">
+									    <td>Reflectometry</td>
+									    <td>Invesigating the optical response of the fabricated mirror. &rArr;
+												Wavelength dependent reflectivity.
+											</td>
+										</tr>
+										<tr class="fragment">
+									    <td>Profilometer</td>
+									    <td>
+												Etching part of the mirror to measure the total thickness of the mirror using a profilometer.
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+				</section>
+
+				<section class="main-section" data-section-name="Ellipsometry">
+					<section class="toc-overview" data-section-name="Ellipsometry">
+						<div class="custom-slide-content">
+							<p>
+								<strong>Single layer thickness measurement:</strong>
+								<!-- In our experiment we used an ellipsometer to determine the current daily etching rate. -->
+								A predefined current density for the two alternating layers will result in layer thickness <i>d</i> and refractive index <i>n</i>
+								that strongly depends on many factors such as HF-concentration, ambient temperature etc. <br>
+								&rArr; Ellipsometry used to fix other parameters.
+							</p>
+							<div class="center-fig wide-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/ellipsometer_photo.png"></img>
+									 <figcaption><strong>Ellipsometer used in our experiment.</strong> The ellipsometer is connected to a comuter-program which
+										 fits the measured ellipsometric parameters Ψ (Psi) and Δ (Delta) and outputs possible values for <i>n</i> and <i>d</i>.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+					</section>
+					<section data-section-name="Ellipsometry">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Important facts</h2>
+							<ul class="ul-circle">
+								<li class="fragment">Reflection angle: 70˚</li>
+								<li class="fragment">Compensate for the misalignment of the reflection plane using the two thumb screws until the intensity at the detector has reached a maximum<br>
+									&rArr; Autocollimator projects two crosshairs onto the sample<br>
+									&rArr; These must be inline
+								 </li>
+								<li class="fragment">The laser is focused on the surface by adjusting the height of the sample table</li>
+								<li class="fragment">Single Point Measurement</li>
+								<li class="fragment">PRM-Profile scan: Record several measuring points in a line for more details</li>
+								<li class="fragment">Critical consideration of the measured values: Close to a multiple of the period thickness? </li>
+							</ul>
+						</div>
+					</section>
+				</section>
+
+				<section class="main-section" data-section-name="Determining Mirror Parameters">
+					<section class="toc-overview" data-section-name="Determining Mirror Parameters">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Procedure</h2>
+							<ul class="ul-circle">
+								<li class="fragment">Parameters for the dielectric mirror: Current density, number of layers and etching time</li>
+								<li class="fragment">Etching time dependent on etching rate (day-dependent)</li>
+								<li class="fragment">External influences:<br>
+									&rArr; Temperature fluctuations<br>
+									&rArr; Electrolyte composition <br>
+									&rArr; Purity of the etchant
+								 </li>
+								<li class="fragment">Goal: Elimination of external influences in order to achieve precise and constant layer parameters</li>
+							</ul>
+						</div>
+        	</section>
+
+					<section data-section-name="Determining Mirror Parameters">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Target values</h2>
+							<p>Data determined from the known reference curves.
+								These values should serve as a guideline for determining the final mirror property parameters.</p>
+							<table class="custom-table">
+								<thead>
+									<tr>
+										<th>Layer</th>
+										<th>El. current [mA]</th>
+										<th>Refractive index <i>n</i> []</th>
+										<th>Thickness <i>d</i> [nm]</th>
+										<th>Etching-rate [nm/s]</th>
+										<th>Time [s]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><i>n</i><sub>high</sub></td>
+										<td>50</td>
+										<td>2.2</td>
+										<td>80</td>
+										<td>8</td>
+										<td>10</td>
+									</tr>
+									<tr>
+										<td><i>n</i><sub>low</sub></td>
+										<td>100</td>
+										<td>2.0</td>
+										<td>90</td>
+										<td>14</td>
+										<td>6.4</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+        	</section>
+
+					<section data-section-name="Determining Mirror Parameters">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>First layer:</strong>
+								Etching of the first layer (high <i>n</i>) by applying 50 mA for 10 seconds.
+							</p>
+							<div class="center-fig wide-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/ellipsometer_first_layer.png"></img>
+									 <figcaption><strong>Ellipsometer measurement of the first layer.</strong>
+										 Plotted: Thickness <i>d</i> and refractive index <i>n</i> with respect to position.
+										 Thickness is observed to be approx. 43.2 nm and <i>n</i> is approx. 2.65.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+        	</section>
+					<section data-section-name="Determining Mirror Parameters">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>Second layer:</strong>
+								Etching of the second layer (low <i>n</i>) by applying 100 mA for 6.4 seconds.
+							</p>
+							<div class="center-fig wide-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/ellipsometer_second_layer.png"></img>
+									 <figcaption><strong>Ellipsometer measurement of the second layer.</strong>
+										 Plotted: Thickness <i>d</i> and refractive index <i>n</i> with respect to position.
+										 Thickness is observed to be approx. 82.5 nm and <i>n</i> is approx. 2.18.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+        	</section>
+					<section data-section-name="Determining Mirror Parameters">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Results from ellipsometric measurements</h2>
+							<p>Comparison of target parameters and measured values.</p>
+							<table class="custom-table">
+								<thead>
+									<tr >
+								    <th style="text-align: center!important; border: none!important;" colspan="4">High <i>n</i> layer</td>
+								  </tr>
+									<tr style="border: none!important;">
+										<th>Layer</th>
+										<th>Refractive index <i>n</i> []</th>
+										<th>Thickness <i>d</i> [nm]</th>
+										<th>Etching-Rate [nm/s]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Target</td>
+										<td>2.2</td>
+										<td>80</td>
+										<td>8</td>
+									</tr>
+									<tr>
+										<td>Measured</td>
+										<td>2.65</td>
+										<td>43.2</td>
+										<td>4.3</td>
+									</tr>
+								</tbody>
+							</table>
+							<br>
+							<table class="custom-table">
+								<thead>
+									<tr >
+								    <th style="text-align: center!important; border: none!important;" colspan="4">Low <i>n</i> layer</td>
+								  </tr>
+									<tr style="border: none!important;">
+										<th>Layer</th>
+										<th>Refractive index <i>n</i> []</th>
+										<th>Thickness <i>d</i> [nm]</th>
+										<th>Etching-Rate [nm/s]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>target</td>
+										<td>2.0</td>
+										<td>90</td>
+										<td>14</td>
+									</tr>
+									<tr>
+										<td>measured</td>
+										<td>2.18</td>
+										<td>82.5</td>
+										<td>12.8</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+        	</section>
+
+					<section data-section-name="Determining Mirror Parameters">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Defining the mirror parameters</h2>
+							<p>
+								<strong>Mirror for center wavelength at 422.2 nm:</strong>
+								Our mirror is designed to have 10 alternating layers with layer-parameters listed below.
+							</p>
+							<table class="custom-table">
+								<thead>
+									<tr>
+										<th>Layer</th>
+										<th>El. current [mA]</th>
+										<th>Refractive index <i>n</i> []</th>
+										<th>Thickness <i>d</i> [nm]</th>
+										<th>Etching-rate [nm/s]</th>
+										<th>Time [s]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><i>n</i><sub>high</sub></td>
+										<td>50</td>
+										<td>2.65</td>
+										<td>40</td>
+										<td>4.3</td>
+										<td>9.3</td>
+									</tr>
+									<tr>
+										<td><i>n</i><sub>low</sub></td>
+										<td>100</td>
+										<td>2.18</td>
+										<td>48.4</td>
+										<td>12.8</td>
+										<td>3.8</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+        	</section>
+        </section>
+
+				<section class="main-section" data-section-name="Characterization">
+					<section class="toc-overview" data-section-name="Characterization">
+						<div class="custom-slide-content">
+							<p class="fragment">
+								<strong>Optical response:</strong>
+								Simulation using the previously determined parameter and measurement of mirror using reflectometry.
+							</p>
+							<p class="fragment">
+ 								<strong>Mirror thickness:</strong>
+ 								Profilometer measurement of etched mirror.
+ 							</p>
+						</div>
+					</section>
+					<section data-section-name="Characterization">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>Reflectivity Simulation:</strong>
+								Simulation of <i>R</i> for an alternating 10-layer stack with <i>n</i><sub>high</sub> = 2.65 and <i>n</i><sub>low</sub> = 2.18 and thickness
+								<i>d</i><sub>high</sub> = 40.0 nm and <i>d</i><sub>low</sub> = 48.4 nm shown below.
+							</p>
+							<div class="center-fig mid-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/reflectometer_sim.png"></img>
+									 <figcaption><strong>Simulation results.</strong> Depicted are the simulation results for number of layers 10, 8, and 6. Decreasing the layer thickness will decrease the peak reflectivity.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+					</section>
+					<section data-section-name="Characterization">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>Reflectivity Measurement:</strong>
+								Measured reflectivity <i>R</i> with respect to wavelength <i>λ</i> by means of reflectometry shown below.
+							</p>
+							<div class="center-fig wide-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/reflectometer_measurement.png"></img>
+									 <figcaption><strong>Measurement result of fabricated mirror using reflectometry.</strong> The peak
+										 reflectivity is observed to be at around 861 nm.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+					</section>
+					<section data-section-name="Characterization">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Target values</h2> -->
+							<p>
+								<strong>Profilometer measurement:</strong>
+								By etching part of the mirror using KOH the total thickness can be measured using a profilometer as shown below.
+							</p>
+							<div class="center-fig wide-fig">
+								<figure class="">
+									 <img class="dielectric" src="figures/profilometer_measurement.png"></img>
+									 <figcaption><strong>Profilometer measurement.</strong>
+										 The total mirror thickness <i>d</i> is observed to be approximately 1094 nm.
+									 </figcaption>
+								 </figure>
+							</div>
+						</div>
+					</section>
+				</section>
+
+
+				<section class="main-section" data-section-name="Discussion">
+					<section class="toc-overview" data-section-name="Discussion">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Discrepancies</h2>
+							<p class="fragment">
+								<strong>Optical response:</strong>
+								The wavelength for which the reflectance is highest has been observed to be approx. 861 nm
+								which is far off the target wavelenght of 422.2 nm. This represents a shift by a factor of approx. 2.
+							</p>
+							<p class="fragment">
+ 								<strong>Mirror thickness:</strong>
+ 								The thickness of the mirror was measured to be significantly thicker than expected. 10 alternating layers of thickness
+								40 nm and 48.4 nm respectively were indended which should result in a total thickness of 442 nm.
+								The profilometer measurement however, clearly indicates that the thickness of the mirror was approx. 1094 nm.
+								While we could obtain a value for the total thickness, we have no information about the individual layers.
+ 							</p>
+  						<!-- <p class="fragment">
+  								<strong>Hydrogen bubbles inside etch cell:</strong>
+  								During etching of the mirror the formation of hydrogen bubbles was observed.
+									The generation of hydrogen bubbles is a byproduct of the dissolution reaction.
+  						</p>
+  						<p class="fragment">
+ 								<strong>Decreasing resistance</strong>
+ 								During etching we observed a steady decrease in electrical resistance of the silicon waver.
+								Does this mean all the layers have different properties?
+   						</p> -->
+						</div>
+
+        	</section>
+					<section data-section-name="Discussion">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Observations</h2>
+  						<p class="fragment">
+  								<strong>Hydrogen bubbles inside etch cell:</strong>
+  								During etching of the mirror the formation of hydrogen bubbles was observed.
+									The generation of hydrogen bubbles is a byproduct of the dissolution reaction.
+  						</p>
+  						<p class="fragment">
+ 								<strong>Decreasing resistance</strong>
+ 								During etching we observed a steady decrease in electrical resistance of the silicon waver.
+								Does this mean all the layers have different properties?
+   						</p>
+						</div>
+
+        	</section>
+					<section data-section-name="Discussion">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Oxidation of porous silicon</h2>
+ 							<p class="fragment">
+ 								<strong>Oxidation after exposure to air:</strong>
+								Given its large surface area, the porous silicon layers are highly prone to oxidation when exposed to ambient air.
+ 							</p>
+							<p class="fragment">
+ 								<strong>Oxidation during etching:</strong>
+								Localized oxidation in the course of anodic etching might occur under certain electrochemical conditions, such as insufficient HF concentration or the presence of competing reactions.
+								This might be relevant for our case as we used a very low HF-concentration.
+ 							</p>
+							<p class="fragment">
+ 								<strong>Change of refractive index:</strong>
+								Although the pores are filled with a substance with higher refractive index (<i>n</i><sub>SiO<sub>2</sub></sub>>1), oxidation of porous silicon always decreases its refractive index.
+								That is because it occurs by sacrifice of the silicon fraction with the much higher refractive index <i>n</i><sub>Si</sub>=3,86 (<i>λ</i>=633 nm).
+								<span class="citation">V.A. Tolmachev E.V. Astrova a. “Effective refractive index and composition of oxidized porous
+								silicon films”. In: <i>Materials Science and Engineering</i> (2000).</span>
+ 							</p>
+						</div>
+					</section>
+					<section data-section-name="Discussion">
+						<div class="custom-slide-content">
+ 							<p class="fragment">
+								<strong>Volume increase caused by oxidation:</strong>
+								In previous work it has been shown that oxidation does not depend on porosity.
+								\[
+								 V(x) = V_0+V_01.27x,\\
+								\]
+								where x denotes the amount of oxidation (0 ≤ <i>x</i> ≤ 1). Therfore, thickness is expected to increase by:
+								\[
+								 d/d_0=(1+1.27x)^{1/3}
+								\]
+								For complete oxidation \((x=1)\) we expect a thickness increase by a factor of approx 1.3. However, at low temperatures, the dependence of the oxidation rate on the crystallo- graphic direction becomes noticeable.
+								<span class="citation">Sailor, M.J. (2014). Chemical Reactivity and Surface Chemistry of Porous Silicon. In: <i>Canham, L. (eds) Handbook of Porous Silicon</i>. Springer.</span>
+  						</p>
+						</div>
+					</section>
+					<section data-section-name="Discussion">
+						<div class="custom-slide-content">
+							<h2 class="emphasize heading">Conclusions we can draw</h2>
+							<p class="fragment">
+								<strong>Hydrogen bubbles inhibit formation of pores:</strong>
+								Not all hydrogen bubbles reach the surface of the electrolyte.
+								Some stay stuck inside the pores keeping the electrolyte from reaching the bottom of the pores.
+								Hence the dissolution reaction rate is reduced resulting in less pore formation.
+								This has a direct effect on the refractive index of the layers.<br>
+								<i>Possible solutions:</i><br>
+								&rArr; Choose lower current density<br>
+								&rArr; Shake etch cell (could be dangerous because of HF)<br>
+								&rArr; Ultrasonic treatment during etching (affects etch rate)<br>
+							 </p>
+							 <!-- <p class="fragment">
+ 								<strong>Decreasing resistance:</strong>
+								As the process proceeds, Joule heating can occur due to electrical current flowing through the silicon, affecting resistance and etching rates.
+								This local heating can alter the chemical dynamics of the etching solution and potentially impact uniformity.
+								However, the spectrum of the layer stack shows clear characteristics of a dielectric mirror.
+ 								Therfore, the decreasing resistance could just be a result of decreasing silicon thickness:
+								\(R = ρL/A\), where R is resistance, ρ is resistivity, L is length, and A is the cross-sectional area). <br>
+								<i>Possible solutions:</i><br>
+								&rArr; plot avg resistance for each layer<br>
+								&rArr; measure temperature
+ 							 </p> -->
+						</div>
+					</section>
+					<section data-section-name="Discussion">
+						<div class="custom-slide-content">
+							 <p class="fragment">
+ 								<strong>Decreasing resistance:</strong>
+								As the process proceeds, Joule heating can occur due to electrical current flowing through the silicon, affecting resistance and etching rates.
+								This local heating can alter the chemical dynamics of the etching solution and potentially impact uniformity.
+								However, the spectrum of the layer stack shows clear characteristics of a dielectric mirror.
+ 								Therfore, the decreasing resistance could just be a result of decreasing silicon thickness:
+								\(R = ρL/A\), where R is resistance, ρ is resistivity, L is length, and A is the cross-sectional area). <br>
+								<i>Possible solutions:</i><br>
+								&rArr; plot avg resistance for each layer<br>
+								&rArr; measure temperature
+ 							 </p>
+						</div>
+					</section>
+					<section data-section-name="Discussion">
+						<div class="custom-slide-content">
+							<!-- <h2 class="emphasize heading">Conclusions we can draw</h2> -->
+							<p class="fragment">
+								<strong>Oxidation as the driving source for discrepancies:</strong>
+								During fabrication oxidation of the porous silicon layers has not been taken into account.
+								Spectrum of the mirror resembles that of a functioning dielectric mirror to reasonable degree.
+								We conclude that all layers have been affected equally (to a reasonable degree).
+								Moreover, an increase of coss-section of the mirror was not observed, hence oxidation must have been an isotropic.
+								Growth of 2 times the inital thickness is unlikely, however we assume that error propagation must have occured.<br>
+								<i>Possible solutions:</i><br>
+								&rArr; Initial thin layer is bound to oxidize fast. Determined etching-rate was wrong.<br>
+								&rArr; Invesigate oxidation kinetics and adjust etching-rate accordingly<br>
+								<!-- &rArr; Determingn etch-rate was not nesseccary in the first place: Relying on the values provided might have produced better results -->
+							 </p>
+						</div>
+					</section>
+
+        </section>
+			</div>
+
+			<div id="footer" class="footer stripe-wrapper stripe-bottom-left">
+				<div class="stripe stripe-short white-smoke flex-box">
+					<img src="logos/hm_logo_2024.png" alt="">
+					<p class="footer-text">Porous Silicon &#169;</p>
+					<img src="logos/micronano_logo_2024.png" alt="">
+					<p class="footer-text">Mikro-und Nanotechnik</p>
+				</div>
+				<div class="stripe-end stripe-short white-smoke-svg"><svg viewBox="0 0 5 10" height="100%" xmlns="http://www.w3.org/2000/svg"><path d="m 0,0 c 2.5,0 2.5,2.5 2.5,2.5 v 5 c 0,0 0,2.5 2.5,2.5 H 0 Z" style="" /></svg></div>
+			</div>
+
+		</div>
+
+		<div id="hide" style="display: none;">
+
+		</div>
+
+
+		<!-- - make section headers and toc -->
+		<!-- <script src="js/make_sections.js"></script> -->
+		<script src="js/make_citations.js"></script>
+
+
+
+
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+		<script src="../plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+
+        width: '100%',
+        height: '100%',
+				center: true,
+
+        margin: 0.0,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 2.0
+			});
+		</script>
+		<!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+		<script src="js/print_pdf.js"></script>
+	</body>
+</html>

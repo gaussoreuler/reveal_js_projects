@@ -1,0 +1,15 @@
+.citations-list{
+  list-style-type: none !important; /* Remove bullets */
+  padding: 0 !important; /* Remove padding */
+  margin: 0 !important; /* Remove margins */
+}
+.citations-list{
+  font-size: .4em;
+  font-family: 'Proxima-Nova-Extra-Condensed';
+  font-weight: 400;
+}
+.citations-heading{
+  font-size: .6em!important;
+  margin: unset!important;
+
+}
